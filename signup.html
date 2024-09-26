@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="coding.png" type="image/x-icon">
+    <script src="script.js" defer></script> <!-- Defer to load script after HTML -->
+</head>
+<body class="body1">
+    <fieldset class="fieldset">
+        <legend>Sign Up</legend>
+        <form id="signUpForm" action="login.html" method="post">
+            <label>First name</label><br>
+            <input  class="input" type="text" placeholder="First name" oninput="validateText(this)" required><br>
+
+            <label>Last name</label><br>
+            <input class="input" type="text" placeholder="Last Name" oninput="validateText(this)" required><br>
+            
+            <label>Mobile number or  Email</label><br>
+            <input  class="input" type="email" placeholder="Mobile number or  Email" required><br>
+            <label>Password</label><br>
+            <input  class="input" type="password" name="password" placeholder="New password" required><br>
+
+            <label>Confirm Password</label><br>
+            <input class="input" type="password" name="password" placeholder="Confirm password" required><br>
+
+            <label >Gender</label>
+            <select  class="input" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <button class="button" type="submit">Submit</button><br>
+
+        </form>
+        <div>
+            <p class="loginback">Already have an account? <a class="agreementa2" href="https://cyberflowcode.github.io/login/">Login here</a></p><br>
+
+            <label class="lastLy" aria-required="true">
+                <input class="agreements" type="checkbox" required>I agree to the <a class="agreementa" href="terms.html" target="_blank"> Terms of Service </a> and <a class="agreementa" href="privacy.html" target="_blank"> Privacy Policy </a>
+            </label>
+        </div>
+   
+    </fieldset>
+    
+</body>
+</html>

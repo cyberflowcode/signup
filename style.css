@@ -1,0 +1,115 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.body1 {
+    background-image: url(bckg1.JPG);
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    backdrop-filter: blur(3px); /* Apply blur effect */
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position relative for overlay */
+}
+
+.form-container {
+    position: relative; /* Position relative to stack elements */
+    z-index: 1; /* Bring content above the blurred background */
+}
+
+/* Ensure the container that holds content has a solid background */
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px; /* Optional: for rounded corners */
+    z-index: -1; /* Keep it behind the content */
+}
+
+fieldset {
+    width: 500px; /* Set a larger width for the form */
+    padding: 20px;
+    border: none; /* Remove border */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+legend {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 18px;
+}
+
+.input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #5a31ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: gray; /* Slightly darker on hover */
+}
+.lastLy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    margin: 2px 0;
+}
+.agreementa {
+    margin: 3px;
+    text-decoration: none;
+}
+.agreementa2 {
+    text-decoration: none;
+}
+.agreementa2:hover {
+    color: gray;
+}
+.agreementa:hover {
+    color: red;
+}
+.loginback {
+    padding: 5px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: black ;
+}
+.back1 {
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%; /* Reduce the width on smaller devices */
+    }
+}
