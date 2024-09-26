@@ -12,5 +12,5 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
     alert("Form submitted successfully!");
 
-    window.location.href = "https://cyberflowcode.github.io/student/";
+    window.location.href = "https://cyberflowcode.github.io/login/";
 });
