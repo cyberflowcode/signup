@@ -85,10 +85,11 @@ label {
     text-decoration: none;
 }
 .agreementa2 {
+    color: #5a31ee;
     text-decoration: none;
 }
 .agreementa2:hover {
-    color: gray;
+    color: cyan;
 }
 .agreementa:hover {
     color: red;
